@@ -21,7 +21,7 @@ task download_fastqs {
         }
     }
     runtime {
-        docker: "akm0001/wdl-test"
+        docker: "akm0001/mamba-sra-tools"
     }
 }
 
