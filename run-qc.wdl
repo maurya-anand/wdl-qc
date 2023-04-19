@@ -115,6 +115,8 @@ workflow main {
     }
 
     meta {
-        # Takes a list of SRA run accessions and runs fast-dump and trimmomatic.
+        desc: "Takes a list of SRA run accessions and runs fasterq-dump and trimmomatic."
+        author: "Anand Maurya"
+        github: "https://github.com/maurya-anand/wdl-qc"
     }
 }
