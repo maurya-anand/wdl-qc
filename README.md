@@ -2,7 +2,7 @@
 
 #### [not for production]
 
-#### Dependencies
+#### Prerequisites
 - [Mamba](https://mamba.readthedocs.io/en/latest/index.html)
 - [Docker](https://www.docker.com/)
 
