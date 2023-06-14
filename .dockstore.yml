@@ -1,0 +1,10 @@
+version: 1.2
+workflows:
+  - subclass: WDL
+  primaryDescriptorPath: /run-qc.wdl
+  testParameterFiles:
+    - /example/inputs.json
+  readMePath: /README.md
+  authors:
+    - name: Anand Maurya
+      email: anandmaurya@hotmail.com
