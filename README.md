@@ -1,7 +1,8 @@
 # WDL Pipeline for QC
 
-[not for production]
-[testing dockstore]
+- [not ready for production]
+- [testing dockstore](https://dockstore.org/workflows/github.com/maurya-anand/wdl-qc:feat-wdl-imports)
+
 
 ## Prerequisites
 
