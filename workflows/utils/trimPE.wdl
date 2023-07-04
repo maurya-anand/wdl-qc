@@ -5,6 +5,7 @@ task trimmomaticPE {
     input {
         Array[File] paired_fastq
         File adapterPE
+        String docker
     }
 
     parameter_meta {
@@ -29,7 +30,7 @@ task trimmomaticPE {
     }
         
     runtime {
-        docker: "akm0001/mamba-trimmomatic"
+        docker: "~{docker}"
         memory: "~{memory_mb} MiB"
         disks: "local-disk ~{disk_size_gb} HDD"
     }

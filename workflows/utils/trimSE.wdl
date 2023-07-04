@@ -5,6 +5,7 @@ task trimmomaticSE {
     input {
         Array[File] single_fastq
         File adapterSE
+        String docker
     }
 
     parameter_meta {
@@ -28,7 +29,7 @@ task trimmomaticSE {
     }
     
     runtime {
-        docker: "akm0001/mamba-trimmomatic"
+        docker: "~{docker}"
         memory: "~{memory_mb} MiB"
         disks: "local-disk ~{disk_size_gb} HDD"
     }

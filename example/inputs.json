@@ -1,5 +1,5 @@
 {
-    "main.sra_run_accession": ["SRR12548227", "SRR17822879", "ERR3261720", "ERR3261721", "ERR3261722", "ERR3261723", "ERR3261724"],
+    "main.sra_run_accession": ["ERR3261723", "ERR3261724"],
     "main.trimmomaticPE.adapterPE": "./example/adapters/TruSeq3-PE-2.fa",
     "main.trimmomaticSE.adapterSE": "./example/adapters/TruSeq3-SE.fa"
   }

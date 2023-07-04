@@ -4,6 +4,7 @@ task download_fastqs {
     
     input {
         String run_accession
+        String docker
     }
 
     parameter_meta {
@@ -22,7 +23,7 @@ task download_fastqs {
     }
     
     runtime {
-        docker: "akm0001/mamba-sra-tools"
+        docker: "~{docker}"
         memory: "16 GiB"
     }
 }

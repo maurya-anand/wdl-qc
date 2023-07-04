@@ -9,6 +9,10 @@ import "./utils/trimPE.wdl" as trimPE
 import "./utils/trimSE.wdl" as trimSE
 
 workflow main {
+
+    String pipeline_version = "1.0.2"
+    
+    String container_src = "ghcr.io/maurya-anand/wdl-qc:~{pipeline_version}"
     
     input {
         Array[String] sra_run_accession
@@ -21,20 +25,20 @@ workflow main {
     scatter (runID in sra_run_accession) {
         
         call fetchSRA.download_fastqs {
-            input: run_accession = runID
+            input: run_accession = runID, docker = container_src
         }      
 
         Int num_fastq = length(download_fastqs.fastqs)
 
         if (num_fastq == 2) {
             call trimPE.trimmomaticPE {
-                input: paired_fastq = download_fastqs.fastqs,
+                input: paired_fastq = download_fastqs.fastqs, docker = container_src
             }
         }    
 
         if (num_fastq == 1) {
             call trimSE.trimmomaticSE {
-                input : single_fastq = download_fastqs.fastqs,
+                input : single_fastq = download_fastqs.fastqs, docker = container_src
             }
         }
     
