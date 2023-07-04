@@ -1,0 +1,15 @@
+name: Docker Image CI for Github
+
+on:
+  push:
+
+jobs:
+  build_and_publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build and push image to container registry
+        run: |
+          docker login --username maurya-anand --password ${{secrets.GH_PAT}} ghcr.io
+          docker build . --tag ghcr.io/maurya-anand/wdl-qc:latest
+          docker push ghcr.io/maurya-anand/wdl-qc:latest
