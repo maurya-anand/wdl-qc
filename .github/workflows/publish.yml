@@ -11,5 +11,5 @@ jobs:
       - name: Build and push image to container registry
         run: |
           docker login --username maurya-anand --password ${{secrets.GH_PAT}} ghcr.io
-          docker build . --tag ghcr.io/maurya-anand/wdl-qc:latest
+          docker build --tag ghcr.io/maurya-anand/wdl-qc:latest container .
           docker push ghcr.io/maurya-anand/wdl-qc:latest
