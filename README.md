@@ -4,14 +4,13 @@
 
 This repo is for testing purposes only.
 
-```[tasklist]
-## My tasks
+## Tasks
+
 - [x] [Publishing on dockstore](https://dockstore.org/workflows/github.com/maurya-anand/wdl-qc:feat-wdl-imports)
 - [x] Versioning and tags
 - [x] [Testing Github actions](https://github.com/users/maurya-anand/packages/container/package/wdl-qc)
 - [ ] Container security
 - [ ] Adding custom scripts and executables
-```
 
 ## Prerequisites
 
