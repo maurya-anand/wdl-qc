@@ -2,19 +2,21 @@
 
 [![Build](https://github.com/maurya-anand/wdl-qc/actions/workflows/publish.yml/badge.svg)](https://github.com/maurya-anand/wdl-qc/actions/workflows/publish.yml)
 
-- [not ready for production]
-- [testing dockstore](https://dockstore.org/workflows/github.com/maurya-anand/wdl-qc:feat-wdl-imports)
-- testing Github actions
+This repo is for testing purposes only.
+
+```[tasklist]
+## My tasks
+- [x] [Publishing on dockstore](https://dockstore.org/workflows/github.com/maurya-anand/wdl-qc:feat-wdl-imports)
+- [x] Versioning and tags
+- [x] [Testing Github actions](https://github.com/users/maurya-anand/packages/container/package/wdl-qc)
+- [ ] Container security
+- [ ] Adding custom scripts and executables
+```
 
 ## Prerequisites
 
 - [Mamba](https://mamba.readthedocs.io/en/latest/index.html)
 - [Docker](https://www.docker.com/)
-
-## Dockerhub images
-
-- [akm0001/mamba-sra-tools](https://hub.docker.com/r/akm0001/mamba-sra-tools)
-- [akm0001/mamba-trimmomatic](https://hub.docker.com/r/akm0001/mamba-trimmomatic)
 
 ## Setting up the test environment
 
@@ -27,5 +29,5 @@ $ mamba activate cromwell
 ## Example usage
 
 ```{bash}
-(cromwell) $ cromwell run run-qc.wdl -i example/inputs.json
+(cromwell) $ cromwell run workflows/run-qc.wdl -i example/inputs.json
 ```
