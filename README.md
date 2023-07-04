@@ -2,6 +2,7 @@
 
 - [not ready for production]
 - [testing dockstore](https://dockstore.org/workflows/github.com/maurya-anand/wdl-qc:feat-wdl-imports)
+- testing Github actions
 
 ## Prerequisites
 
