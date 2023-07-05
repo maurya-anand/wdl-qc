@@ -44,4 +44,8 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
-
+      - name: Create release
+        run: |
+          tag=$(git describe --tags --abbrev=0)
+          changelog=$(cat CHANGELOG.md)
+          gh release create $tag --title "Release $tag" --notes "$changelog"
