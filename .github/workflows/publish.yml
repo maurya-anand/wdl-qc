@@ -45,9 +45,6 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
 
       - name: Create release
-        run: |
-          changelog=$(cat CHANGELOG.md)
-          gh release create v$TAG --title "Release v$TAG" --notes "$changelog"
-        env:
-          GH_TOKEN: ${{ secrets.GH_PAT }}
-          TAG: ${{DOCKER_METADATA_OUTPUT_VERSION}}
+        uses: ncipollo/release-action@v1
+        with:
+          bodyFile: "CHANGELOG.md"
