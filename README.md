@@ -1,17 +1,23 @@
 # WDL Pipeline for QC
 
-[![Build](https://github.com/maurya-anand/wdl-qc/actions/workflows/publish.yml/badge.svg)](https://github.com/maurya-anand/wdl-qc/actions/workflows/publish.yml)
-[![GitHub version](https://badge.fury.io/gh/maurya-anand%2Fwdl-qc.svg)](https://badge.fury.io/gh/maurya-anand%2Fwdl-qc)
+![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/maurya-anand/wdl-qc/publish.yml)
+![GitHub release (with filter)](https://img.shields.io/github/v/release/maurya-anand/wdl-qc)
 
 This repo is for testing purposes only.
 
 ## Tasks
 
 - [x] [Publishing on dockstore](https://dockstore.org/workflows/github.com/maurya-anand/wdl-qc:feat-wdl-imports)
-- [x] Versioning and tags
-- [x] [Testing Github actions](https://github.com/users/maurya-anand/packages/container/package/wdl-qc)
+- [x] Versioning and tags for the pipeline and the container
+- [x] [Testing Github actions](https://github.com/users/maurya-anand/packages/container/package/wdl-qc) CI/CD
+  - [x] Automatic credential management (githug + container registry)
+  - [x] Extract metadata from the repo to assign tags and releases
+  - [x] Automatically build and push the container to ghcr.io
+  - [x] Create a git repo release from the tags.
+- [ ] Documenting tags, releases and change logs for the pipelines
 - [ ] Container security
 - [ ] Adding custom scripts and executables
+- [ ] Explore other container registry for private hosting
 
 ## Prerequisites
 
