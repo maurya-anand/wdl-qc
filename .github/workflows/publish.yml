@@ -47,6 +47,6 @@ jobs:
       - name: Create release
         run: |
           changelog=$(cat CHANGELOG.md)
-          gh release create ${{ steps.meta.outputs.tags }} --title "Release $tag" --notes "$changelog"
+          gh release create ${{ steps.meta.outputs.tags }} --title ${{ steps.meta.outputs.tags }} --notes "$changelog"
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}
