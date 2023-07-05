@@ -46,7 +46,6 @@ jobs:
 
       - name: Create release
         run: |
-          tag=$(git describe --tags --abbrev=0)
           changelog=$(cat CHANGELOG.md)
           gh release create ${{ steps.meta.outputs.tags }} --title "Release $tag" --notes "$changelog"
         env:
