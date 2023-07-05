@@ -8,6 +8,12 @@ All notable changes to this project will be documented in this file.
 - Automatic deployment from a private repo
 - Hosting container in the Google Artifact registry privately
 
+## [1.0.4] - 2023-07-05
+
+### Added
+
+- Dynamic release
+
 ## [1.0.3] - 2023-07-04
 
 ### Added
