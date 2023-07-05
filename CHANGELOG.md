@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 
 - Custom scripts in container
 - Automatic deployment from a private repo
+- Hosting container in the Google Artifact registry privately
 
 ## [1.0.3] - 2023-07-04
 

@@ -1,6 +1,7 @@
 # WDL Pipeline for QC
 
 [![Build](https://github.com/maurya-anand/wdl-qc/actions/workflows/publish.yml/badge.svg)](https://github.com/maurya-anand/wdl-qc/actions/workflows/publish.yml)
+[![GitHub version](https://badge.fury.io/gh/maurya-anand%2Fwdl-qc.svg)](https://badge.fury.io/gh/maurya-anand%2Fwdl-qc)
 
 This repo is for testing purposes only.
 
@@ -30,3 +31,8 @@ $ mamba activate cromwell
 ```{bash}
 (cromwell) $ cromwell run workflows/run-qc.wdl -i example/inputs.json
 ```
+
+## Docs
+
+- [Changelog](./CHANGELOG.md)
+- [License](./LICENSE)
