@@ -10,7 +10,7 @@ import "./utils/trimSE.wdl" as trimSE
 
 workflow main {
 
-    String pipeline_version = "1.0.4"
+    String pipeline_version = "1.0.5"
     
     String container_src = "ghcr.io/maurya-anand/wdl-qc:~{pipeline_version}"
     
