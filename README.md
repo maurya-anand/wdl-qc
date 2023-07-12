@@ -14,7 +14,7 @@ This repo is for testing purposes only.
   - [x] Extract metadata from the repo to assign tags and releases 
   - [x] Automatically build and push the container to ghcr.io. [(container)](https://github.com/users/maurya-anand/packages/container/package/wdl-qc)
   - [x] Create a git repo release from the tags. [(releases)](https://github.com/maurya-anand/wdl-qc/releases)
-- [ ] Documenting tags, releases and change logs for the pipelines
+- [x] Documenting tags, releases and change logs for the pipelines
 - [ ] Container security
 - [ ] Adding custom scripts and executables
 - [ ] Explore other container registry for private hosting
