@@ -16,7 +16,7 @@ This repo is for testing purposes only.
   - [x] Create a git repo release from the tags. [(releases)](https://github.com/maurya-anand/wdl-qc/releases)
 - [x] Documenting tags, releases and change logs for the pipelines
 - [x] Container security
-- [ ] Adding custom scripts and executables
+- [x] Adding custom scripts and executables
 - [ ] Explore other container registry for private hosting
 
 ## Prerequisites
